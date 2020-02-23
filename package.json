@@ -1,0 +1,25 @@
+{
+  "name": "hook-creator",
+  "version": "1.0.5",
+  "description": "A tool to create react hooks",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.6.4",
+    "@babel/core": "7.6.4",
+    "@babel/preset-env": "7.6.3",
+    "@babel/preset-react": "7.6.3",
+    "react": "16.10.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}
