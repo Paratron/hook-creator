@@ -1,22 +1,31 @@
 {
   "name": "hook-creator",
-  "version": "1.0.5",
-  "description": "A tool to create react hooks",
+  "version": "1.0.6",
+  "description": "Create react data hooks for async operations and even push data ",
   "main": "dist/index.js",
   "files": [
     "dist/*"
   ],
   "scripts": {
-    "prepublishOnly": "babel ./src --out-dir ./dist -s inline",
+    "prepublishOnly": "cross-env NODE_ENV=production babel ./src --out-dir ./dist -s inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Paratron/hook-creator.git"
+  },
+  "author": "Christian Engel <christian.engel@wearekiss.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paratron/hook-creator/issues"
+  },
+  "homepage": "https://github.com/Paratron/hook-creator#readme",
   "devDependencies": {
     "@babel/cli": "7.6.4",
     "@babel/core": "7.6.4",
     "@babel/preset-env": "7.6.3",
     "@babel/preset-react": "7.6.3",
+    "cross-env": "7.0.0",
     "react": "16.10.2"
   },
   "peerDependencies": {
