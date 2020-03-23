@@ -41,7 +41,7 @@ let incrementer = 1;
  * @params {*} [any]
  * @returns {*} [any]
  */
-window.hooks = {};
+
 /**
  * Creates a new react hook and an updater function for it.
  * @param {string} hookName The name of the hook. For example "useSomething" - for seeing the actual hook names in react dev tools.
@@ -50,8 +50,6 @@ window.hooks = {};
  */
 export const createHook = (hookName, fetchFunction) => {
 	const mountedComponents = new Map();
-
-	window.hooks[hookName] = mountedComponents;
 
 	const hookUpdater = function () {
 		mountedComponents.forEach((props) => {
