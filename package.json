@@ -1,6 +1,6 @@
 {
   "name": "hook-creator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Create react data hooks for async operations and even push data ",
   "main": "dist/index.js",
   "files": [
